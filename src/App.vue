@@ -1,0 +1,41 @@
+<template>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <router-link tag="li" to="/exercise-1" exact>
+                            <a>Fetch & order</a>
+                        </router-link>  
+                        <router-link tag="li" to="/exercise-2" exact>
+                            <a>Fetch & find</a>
+                        </router-link>  
+                        <router-link tag="li" to="/exercise-3" exact>
+                            <a>Fetch & count</a>
+                        </router-link>   
+                        <router-link tag="li" to="/exercise-4" exact>
+                            <a>Fastest ship</a>
+                        </router-link>  
+                        <router-link tag="li" to="/exercise-5" exact>
+                            <a>Fastest ship</a>
+                        </router-link>   
+                                            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <router-view></router-view>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'App'
+}
+</script>
+
+<style>
+    body {
+        padding-top: 50px;
+    }
+</style>
