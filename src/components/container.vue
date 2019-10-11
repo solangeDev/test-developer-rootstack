@@ -19,7 +19,6 @@ export default {
         return value;
     });
     this.data = JSON.stringify(data, undefined, 4);
-    console.log(data.length)
   }
 }
 </script>

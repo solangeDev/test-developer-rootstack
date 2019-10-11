@@ -132,7 +132,7 @@ export default {
     const year_end = 1983;
     let ships = await this.getSwapi().then((value) => {
       let data = value.data.results.filter((c) => { //Tiene la capacidad para transportar los pasajeros indicados
-        if ((c.passengers) >= capacity) {
+        if (((c.passengers) >= capacity)) {
           return c;
         }
       }).filter((c) => { //Fue parte de la trilogía original (4, 5, 6)

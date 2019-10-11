@@ -20,6 +20,7 @@ export default {
   async mounted() {},
   methods: {
       async searchInput(){
+         this.data = null;
          const data = await api.fastestShip(this.capacity).then((x)=>{
             this.data = JSON.stringify(x, undefined, 4);
          })

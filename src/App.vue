@@ -17,7 +17,7 @@
                             <a>Fastest ship</a>
                         </router-link>  
                         <router-link tag="li" to="/exercise-5" exact>
-                            <a>Fastest ship</a>
+                            <a>Planet by terrain</a>
                         </router-link>   
                                             
                     </ul>
