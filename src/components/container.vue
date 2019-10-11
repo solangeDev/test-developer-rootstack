@@ -22,13 +22,3 @@ export default {
   }
 }
 </script>
-
-<style>
-textarea {
-  width: 100%;
-  min-height: 30rem;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 0.8rem;
-  line-height: 1.2;
-}
-</style>
