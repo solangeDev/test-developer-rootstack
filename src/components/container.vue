@@ -1,13 +1,17 @@
 <template>
-    <div>
-        <textarea name="" cols="30" rows="10" :value= data></textarea>
-    </div>
+  <div>
+    <comTextarea :value="data" />
+  </div>
 </template>
 <script>
 import api from "../controllers/ApiController";
+import comTextarea from "./textarea";
 
 export default {
- name: "Container",
+  name: "Container",
+  components: {
+    comTextarea
+  },
   data() {
     return {
       data: [],
@@ -16,9 +20,9 @@ export default {
   },
   async mounted() {
     let data = await api.getUserOrderby(this.cant).then(value => {
-        return value;
+      return value;
     });
     this.data = JSON.stringify(data, undefined, 4);
   }
-}
+};
 </script>
