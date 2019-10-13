@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="main-container">
+        <nav class="card-container navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                <div id="navbar" class="card navbar-collapse collapse">
+                    <ul class="list-container nav navbar-nav">
                         <router-link tag="li" to="/exercise-1" exact>
                             <a>Fetch & order</a>
                         </router-link>  

@@ -1,7 +1,9 @@
 <template>
-  <div>
-    Tipo de terreno:
-    <input type="text" v-model="terrain" @change="searchInput()" />
+  <div class="feedback-container">
+    <div class="input-container">
+      <span>Tipo de terreno:</span>
+      <input type="text" v-model="terrain" @change="searchInput()" />
+    </div>
     <comTextarea :value="data" />
   </div>
 </template>

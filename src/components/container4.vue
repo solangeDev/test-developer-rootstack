@@ -1,7 +1,9 @@
 <template>
-  <div>
-    Numero de Capacidad :
-    <input type="text" v-model="capacity" @change="searchInput()" />
+  <div class="feedback-container">
+    <div class="input-container">
+      <span>Numero de Capacidad :</span>
+      <input type="text" v-model="capacity" @change="searchInput()" />
+    </div>
     <comTextarea :value="data" />
   </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <textarea name cols="30" rows="10" :value="value"></textarea>
+  <div class="console-container">
+    <div class="console">
+      <textarea name cols="30" rows="10" :value="value"></textarea>
+    </div>
   </div>
 </template>
 <script>
